@@ -1,0 +1,1 @@
+<footer class="text-center">Made by <a href="https://godhermit.github.io/" target="_blank" rel="noopener noreferrer" class="link-dark">Oleh Proidakov</a></footer>
