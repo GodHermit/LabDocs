@@ -63,7 +63,7 @@
                                         <button class="btn btn-sm btn-link link-light document-open" data-bs-toggle="modal"
                                             data-bs-target="#documentModal"
                                             data-document="{{ json_encode($document) }}">Відкрити</button>
-                                        @if ($users::get($auth::id())->role !== 'user')
+                                        @if ($users::get($auth::id())->role !== 'user' && $document->status == 'draft')
                                             <button class="btn btn-sm btn-link link-light document-edit"
                                                 data-bs-toggle="modal" data-bs-target="#editDocumentModal"
                                                 data-document="{{ json_encode($document) }}">Ред.</button>
@@ -81,7 +81,7 @@
                                         <button class="btn btn-sm btn-link link-light document-open" data-bs-toggle="modal"
                                             data-bs-target="#documentModal"
                                             data-document="{{ json_encode($document) }}">Відкрити</button>
-                                        @if ($users::get($auth::id())->role !== 'user')
+                                        @if ($users::get($auth::id())->role !== 'user' && $document->status == 'draft')
                                             <button class="btn btn-sm btn-link link-light document-edit"
                                                 data-bs-toggle="modal" data-bs-target="#editDocumentModal"
                                                 data-document="{{ json_encode($document) }}">Ред.</button>
@@ -99,7 +99,7 @@
                                         <button class="btn btn-sm btn-link link-light document-open" data-bs-toggle="modal"
                                             data-bs-target="#documentModal"
                                             data-document="{{ json_encode($document) }}">Відкрити</button>
-                                        @if ($users::get($auth::id())->role !== 'user')
+                                        @if ($users::get($auth::id())->role !== 'user' && $document->status == 'draft')
                                             <button class="btn btn-sm btn-link link-light document-edit"
                                                 data-bs-toggle="modal" data-bs-target="#editDocumentModal"
                                                 data-document="{{ json_encode($document) }}">Ред.</button>
@@ -117,7 +117,7 @@
                                         <button class="btn btn-sm btn-link link-light document-open" data-bs-toggle="modal"
                                             data-bs-target="#documentModal"
                                             data-document="{{ json_encode($document) }}">Відкрити</button>
-                                        @if ($users::get($auth::id())->role !== 'user')
+                                        @if ($users::get($auth::id())->role !== 'user' && $document->status == 'draft')
                                             <button class="btn btn-sm btn-link link-light document-edit"
                                                 data-bs-toggle="modal" data-bs-target="#editDocumentModal"
                                                 data-document="{{ json_encode($document) }}">Ред.</button>

@@ -43,17 +43,6 @@ $user = $users::get($auth::id());
                 </div>
             </div>
             <div class="row">
-                <div class="col mb-3">
-                    <label for="role" class="form-label">Роль:</label>
-                    <select name="role" id="edit-role" class="form-select">
-                        <option value="admin" {{ $user->role == 'admin' ? 'selected' : null }}>Адміністратор</option>
-                        <option value="manager" {{ $user->role == 'manager' ? 'selected' : null }}>Менеджер</option>
-                        <option value="clerk" {{ $user->role == 'clerk' ? 'selected' : null }}>Діловод</option>
-                        <option value="user" {{ $user->role == 'user' ? 'selected' : null }}>Користувач</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col d-flex">
                     <button class="btn btn-dark ms-auto">Зберегти</button>
                 </div>

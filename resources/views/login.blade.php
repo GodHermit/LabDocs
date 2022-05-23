@@ -20,20 +20,20 @@
                 <form action="/login" method="POST">
                     @csrf
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email address:</label>
+                        <label for="email" class="form-label">Email:</label>
                         <input type="email" class="form-control" id="email" name="email"
                             placeholder="example@example.com" autocomplete="email">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password:</label>
+                        <label for="password" class="form-label">Пароль:</label>
                         <input type="password" class="form-control" id="password" name="password"
                             placeholder="••••••••">
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn btn-dark" type="submit">Login</button>
+                        <button class="btn btn-dark" type="submit">Увійти</button>
                     </div>
                     <p class="mt-3 card-text text-end">
-                        <a href="/sign-up" class="text-secondary">Зереєструватися</a>
+                        <a href="/sign-up" class="text-secondary">Зереєструвати фірму</a>
                     </p>
                 </form>
             </div>
